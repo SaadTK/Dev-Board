@@ -15,20 +15,35 @@
   <body class="bg-blue-50 p-6 poppins-regular">
     <div class="max-w-7xl mx-auto">
       <!-- header section -->
-      <div
-        class="flex justify-between items-center bg-white p-4 rounded-xl shadow-md"
-      >
-        <h1 class="text-2xl font-bold text-gray-800 flex items-center gap-2">
-          <span class="bg-blue-500 p-2 rounded-md text-white">D</span> Dev<span
-            class="text-blue-600"
-            >Board</span
-          >
-        </h1>
-        <div class="flex items-center gap-4">
-          <div class="badge badge-primary p-3 text-lg">23</div>
-          <button class="btn btn-circle btn-outline">⚙️</button>
+      <header class="flex justify-between items-center bg-white p-4 rounded-xl">
+        <!-- Left Side: Logo & Title -->
+        <p class="text-2xl text-black flex items-center">
+          <span class="p-2 rounded-md text-white">
+            <img src="assets/img/logo.png" alt="logo" class="w-[50px]" />
+          </span>
+          Dev<span class="text-black font-bold">Board</span>
+        </p>
+
+        <!-- Right Side: Wrap elements in a flex container -->
+        <div class="flex items-center gap-6">
+          <!-- Checkbox Badge -->
+          <div class="flex items-center gap-2 rounded-full bg-slate-200 p-3">
+            <img
+              src="assets/img/checkbox.png"
+              alt="checkbox"
+              class="w-[32px]"
+            />
+            <p class="text-lg font-bold">23</p>
+          </div>
+
+          <!-- Theme Button -->
+          <img
+            src="assets/img/theme-btn.png"
+            alt="Theme Change"
+            class="w-[60px] p-3 bg-slate-200 rounded-full cursor-pointer"
+          />
         </div>
-      </div>
+      </header>
 
       <!-- Main Content -->
 
@@ -38,23 +53,46 @@
           <div class="grid grid-cols-3 gap-4">
             <!-- Task Overview -->
             <div
-              class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center"
+              class="p-4 flex items-center gap-[25px] pl-[40px] rounded-lg bg-slate-300"
             >
-              <div class="text-xl font-semibold">Task Assigned</div>
-              <div class="text-4xl font-bold text-blue-600">05</div>
+              <img
+                src="assets/img/checkbox.png"
+                alt="checkbox logo"
+                class="w-[60px] p-[15px] bg-gray-200 rounded-full"
+              />
+              <div class="task-num">
+                <p class="text-xl font-semibold">Task Assigned</p>
+                <p class="text-4xl font-bold text-blue-600">05</p>
+              </div>
             </div>
-            <!-- Highlight Section -->
+            <!-- Discover Something New Section -->
             <div
-              class="bg-blue-500 p-4 rounded-xl shadow-md text-white text-center"
+              class="linear-blue-gradient p-4 rounded-xl shadow-md text-white flex text-center items-center gap-[]"
             >
+              <img
+                src="assets/img/board.png"
+                alt="board logo"
+                class="w-[75px]"
+              />
               <h2 class="text-lg font-semibold">
-                📅 Discover Something New Today!
+                Discover Something New Today!
               </h2>
             </div>
             <!-- Date Section -->
-            <div class="bg-white p-4 rounded-xl shadow-md text-center">
-              <h2 class="text-lg font-semibold">📆 Wed,</h2>
-              <h3 class="text-2xl font-bold text-gray-800">Jul 28 2025</h3>
+            <div
+              class="bg-white p-4 rounded-xl shadow-md flex text-center items-center"
+            >
+              <img
+                src="assets/img/calender.png"
+                alt="calender logo"
+                class="w-[40px] ml-[20px]"
+              />
+              <div class="date-day">
+                <h2 class="text-lg -ml-[25px] text-black">Wed ,</h2>
+                <h3 class="text-2xl font-bold text-black ml-[60px]">
+                  Jul 28 2025
+                </h3>
+              </div>
             </div>
           </div>
 
@@ -99,7 +137,7 @@
                 </div>
               </div>
             </div>
-
+            <!-- Task 1 end  -->
             <!-- Task 2 -->
             <div class="card bg-slate-300 p-4 rounded-xl shadow-md">
               <h1
@@ -139,6 +177,7 @@
                 </div>
               </div>
             </div>
+            <!-- Task 2 end  -->
 
             <!-- Task 3 -->
             <div class="card bg-slate-300 p-4 rounded-xl shadow-md">
@@ -153,8 +192,8 @@
               <p
                 class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px]"
               >
-                Store the user's preference in <br />
-                localStorage, update CSS variable...
+                Debug using Chrome <br />
+                DevTools, check for overlapping...
               </p>
               <div
                 class="deadline-date mt-2 text-sm flex items-center justify-between"
@@ -179,6 +218,127 @@
                 </div>
               </div>
             </div>
+            <!-- Task 3 end  -->
+            <!-- Task 4 -->
+            <div class="card bg-slate-300 p-4 rounded-xl shadow-md">
+              <h1
+                class="w-[100px] h-[35px] bg-slate-400 text-black text-center pt-[5px] text-[16px] rounded-lg"
+              >
+                Meta
+              </h1>
+              <h3 class="mt-[10px] mb-[10px] text-black text-2xl font-medium">
+                Add new emoji🤲
+              </h3>
+              <p
+                class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px]"
+              >
+                Debug using Chrome <br />
+                DevTools, check for overlapping...
+              </p>
+              <div
+                class="deadline-date mt-2 text-sm flex items-center justify-between"
+              >
+                <div class="deadline-left">
+                  <span class="deadline opacity-70 text-black text-sm"
+                    >Deadline</span
+                  >
+                  <br />
+                  <b
+                    ><span class="date font-medium text-[16px] text-black"
+                      >21 March 2025</span
+                    ></b
+                  >
+                </div>
+                <div
+                  class="deadline-right bg-blue-600 rounded-lg w-[135px] h-[35px] text-center items-center pt-[8px] text-white"
+                >
+                  <button type="button text-white w-[120px] h-[30px]">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Task 4 end  -->
+            <!-- Task 5 -->
+            <div class="card bg-slate-300 p-4 rounded-xl shadow-md">
+              <h1
+                class="w-[100px] h-[35px] bg-slate-400 text-black text-center pt-[5px] text-[16px] rounded-lg"
+              >
+                Google LLC
+              </h1>
+              <h3 class="mt-[10px] mb-[10px] text-black text-2xl font-medium">
+                Integrate OpenAI API
+              </h3>
+              <p
+                class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px]"
+              >
+                Debug using Chrome <br />
+                DevTools, check for overlapping...
+              </p>
+              <div
+                class="deadline-date mt-2 text-sm flex items-center justify-between"
+              >
+                <div class="deadline-left">
+                  <span class="deadline opacity-70 text-black text-sm"
+                    >Deadline</span
+                  >
+                  <br />
+                  <b
+                    ><span class="date font-medium text-[16px] text-black"
+                      >21 March 2025</span
+                    ></b
+                  >
+                </div>
+                <div
+                  class="deadline-right bg-blue-600 rounded-lg w-[135px] h-[35px] text-center items-center pt-[8px] text-white"
+                >
+                  <button type="button text-white w-[120px] h-[30px]">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Task 5 end  -->
+            <!-- Task 6 -->
+            <div class="card bg-slate-300 p-4 rounded-xl shadow-md">
+              <h1
+                class="w-[100px] h-[35px] bg-slate-400 text-black text-center pt-[5px] text-[16px] rounded-lg"
+              >
+                Glassdoar
+              </h1>
+              <h3 class="mt-[10px] mb-[10px] text-black text-2xl font-medium">
+                Improve Job Searchning
+              </h3>
+              <p
+                class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px]"
+              >
+                Debug using Chrome <br />
+                DevTools, check for overlapping...
+              </p>
+              <div
+                class="deadline-date mt-2 text-sm flex items-center justify-between"
+              >
+                <div class="deadline-left">
+                  <span class="deadline opacity-70 text-black text-sm"
+                    >Deadline</span
+                  >
+                  <br />
+                  <b
+                    ><span class="date font-medium text-[16px] text-black"
+                      >21 March 2025</span
+                    ></b
+                  >
+                </div>
+                <div
+                  class="deadline-right bg-blue-600 rounded-lg w-[135px] h-[35px] text-center items-center pt-[8px] text-white"
+                >
+                  <button type="button text-white w-[120px] h-[30px]">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Task 6 end  -->
           </div>
         </div>
 
