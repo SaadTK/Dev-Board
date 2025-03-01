@@ -3,49 +3,199 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev-Board</title>
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="poppins-regular bg-fuchsia-300">
-    <header
-      class="header-container bg-yellow-100 h-[80px] mt-6 ml-[80px] mr-[80px] flex justify-between text-center items-center"
-    >
+  <body class="bg-blue-50 p-6 poppins-regular">
+    <div class="max-w-7xl mx-auto">
+      <!-- header section -->
       <div
-        class="header-left flex justify-between text-center items-center gap-[10px] ml-[25px]"
+        class="flex justify-between items-center bg-white p-4 rounded-xl shadow-md"
       >
-        <img
-          class="header-left-img w-[50px]"
-          src="assets/img/logo.png"
-          alt="dev board logo"
-        />
-
-        <p class="header-left-title">
-          Dev <span class="header-left-title-board font-bold">Board</span>
-        </p>
-      </div>
-      <div
-        class="header-right flex justify-between text-center items-center gap-[38px] mr-[25px]"
-      >
-        <div
-          class="header-right-img-num-container flex justify-between text-center items-center gap-[8px] rounded-full bg-slate-200 p-[12px]"
-        >
-          <img
-            src="assets/img/checkbox.png"
-            alt="checkbox image"
-            class="header-right-checkbox-img w-[32px]"
-          />
-          <p class="header-right-num">23</p>
+        <h1 class="text-2xl font-bold text-gray-800 flex items-center gap-2">
+          <span class="bg-blue-500 p-2 rounded-md text-white">D</span> Dev<span
+            class="text-blue-600"
+            >Board</span
+          >
+        </h1>
+        <div class="flex items-center gap-4">
+          <div class="badge badge-primary p-3 text-lg">23</div>
+          <button class="btn btn-circle btn-outline">⚙️</button>
         </div>
-        <img
-          src="assets/img/theme-btn.png"
-          alt="btn to change themes"
-          class="header-right-img w-[60px] p-[10px] bg-slate-200 rounded-full"
-        />
       </div>
-    </header>
 
-    <script src="assets/js/test.js"></script>
+      <!-- Main Content -->
+
+      <div class="grid grid-cols-12 gap-4 mt-6">
+        <!-- Left Section (Tasks & Overview) -->
+        <div class="col-span-9">
+          <div class="grid grid-cols-3 gap-4">
+            <!-- Task Overview -->
+            <div
+              class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center"
+            >
+              <div class="text-xl font-semibold">Task Assigned</div>
+              <div class="text-4xl font-bold text-blue-600">05</div>
+            </div>
+            <!-- Highlight Section -->
+            <div
+              class="bg-blue-500 p-4 rounded-xl shadow-md text-white text-center"
+            >
+              <h2 class="text-lg font-semibold">
+                📅 Discover Something New Today!
+              </h2>
+            </div>
+            <!-- Date Section -->
+            <div class="bg-white p-4 rounded-xl shadow-md text-center">
+              <h2 class="text-lg font-semibold">📆 Wed,</h2>
+              <h3 class="text-2xl font-bold text-gray-800">Jul 28 2025</h3>
+            </div>
+          </div>
+
+          <!-- Task Cards -->
+          <div class="grid grid-cols-3 gap-4 mt-6">
+            <!-- Task 1 -->
+            <div class="card bg-slate-300 p-4 rounded-xl shadow-md">
+              <h1
+                class="w-[100px] h-[35px] bg-slate-400 text-black text-center pt-[5px] text-[16px] rounded-lg"
+              >
+                ShopEase
+              </h1>
+              <h3 class="mt-[10px] mb-[10px] text-black text-2xl font-medium">
+                Fix Mobile Button Issue
+              </h3>
+              <p
+                class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px]"
+              >
+                Debug using Chrome <br />
+                DevTools, check for overlapping...
+              </p>
+              <div
+                class="deadline-date mt-2 text-sm flex items-center justify-between"
+              >
+                <div class="deadline-left">
+                  <span class="deadline opacity-70 text-black text-sm"
+                    >Deadline</span
+                  >
+                  <br />
+                  <b
+                    ><span class="date font-medium text-[16px] text-black"
+                      >21 March 2025</span
+                    ></b
+                  >
+                </div>
+                <div
+                  class="deadline-right bg-blue-600 rounded-lg w-[135px] h-[35px] text-center items-center pt-[8px] text-white"
+                >
+                  <button type="button text-white w-[120px] h-[30px]">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Task 2 -->
+            <div class="card bg-slate-300 p-4 rounded-xl shadow-md">
+              <h1
+                class="w-[100px] h-[35px] bg-slate-400 text-black text-center pt-[5px] text-[16px] rounded-lg"
+              >
+                CloudSync
+              </h1>
+              <h3 class="mt-[10px] mb-[10px] text-black text-2xl font-medium">
+                Add Dark Mode
+              </h3>
+              <p
+                class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px]"
+              >
+                Store the user's preference in <br />
+                localStorage, update CSS variable...
+              </p>
+              <div
+                class="deadline-date mt-2 text-sm flex items-center justify-between"
+              >
+                <div class="deadline-left">
+                  <span class="deadline opacity-70 text-black text-sm"
+                    >Deadline</span
+                  >
+                  <br />
+                  <b
+                    ><span class="date font-medium text-[16px] text-black"
+                      >21 March 2025</span
+                    ></b
+                  >
+                </div>
+                <div
+                  class="deadline-right bg-blue-600 rounded-lg w-[135px] h-[35px] text-center items-center pt-[8px] text-white"
+                >
+                  <button type="button text-white w-[120px] h-[30px]">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Task 3 -->
+            <div class="card bg-slate-300 p-4 rounded-xl shadow-md">
+              <h1
+                class="w-[100px] h-[35px] bg-slate-400 text-black text-center pt-[5px] text-[16px] rounded-lg"
+              >
+                SwiftPay
+              </h1>
+              <h3 class="mt-[10px] mb-[10px] text-black text-2xl font-medium">
+                Optimize Home Page
+              </h3>
+              <p
+                class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px]"
+              >
+                Store the user's preference in <br />
+                localStorage, update CSS variable...
+              </p>
+              <div
+                class="deadline-date mt-2 text-sm flex items-center justify-between"
+              >
+                <div class="deadline-left">
+                  <span class="deadline opacity-70 text-black text-sm"
+                    >Deadline</span
+                  >
+                  <br />
+                  <b
+                    ><span class="date font-medium text-[16px] text-black"
+                      >21 March 2025</span
+                    ></b
+                  >
+                </div>
+                <div
+                  class="deadline-right bg-blue-600 rounded-lg w-[135px] h-[35px] text-center items-center pt-[8px] text-white"
+                >
+                  <button type="button text-white w-[120px] h-[30px]">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Section (Activity Log)  -->
+        <div class="col-span-3">
+          <div class="bg-white p-4 rounded-xl shadow-md">
+            <h2 class="text-lg font-semibold">Activity Log</h2>
+            <button class="btn btn-sm btn-primary mt-2">Clear History</button>
+            <div class="mt-4 text-sm text-gray-600">
+              You have completed 'Add Dark Mode' at 12:48 PM
+            </div>
+            <div class="mt-2 text-sm text-gray-600">
+              You have completed 'Optimize Home Page' at 12:48 PM
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
