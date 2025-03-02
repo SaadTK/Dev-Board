@@ -16,13 +16,12 @@
     <div class="max-w-7xl mx-auto">
       <!-- header section -->
       <header class="flex justify-between items-center bg-white p-4 rounded-xl">
-        <!-- Left Side: Logo & Title -->
-        <p class="text-2xl text-black flex items-center">
-          <span class="p-2 rounded-md text-white">
-            <img src="assets/img/logo.png" alt="logo" class="w-[50px]" />
-          </span>
-          Dev<span class="text-black font-bold">Board</span>
-        </p>
+        <div class="logo-title flex text-center items-center gap-[10px]">
+          <img class="logo" src="assets/img/logo.png" alt="logo image" />
+          <p class="title text-4xl text-black">
+            Dev<span class="second-title"><strong>Board</strong></span>
+          </p>
+        </div>
 
         <!-- Right Side: Wrap elements in a flex container -->
         <div class="flex items-center gap-6">
@@ -97,7 +96,7 @@
           </div>
 
           <!-- Task Cards -->
-          <div class="grid grid-cols-3 gap-4 mt-6">
+          <div class="grid grid-cols-3 gap-9 mt-6">
             <!-- Task 1 -->
             <div class="card bg-slate-300 p-4 rounded-xl shadow-md">
               <h1
@@ -115,7 +114,7 @@
                 DevTools, check for overlapping...
               </p>
               <div
-                class="deadline-date mt-2 text-sm flex items-center justify-between"
+                class="deadline-date mt-2 text-sm flex items-center justify-between upper-dashed-border"
               >
                 <div class="deadline-left">
                   <span class="deadline opacity-70 text-black text-sm"
@@ -155,7 +154,7 @@
                 localStorage, update CSS variable...
               </p>
               <div
-                class="deadline-date mt-2 text-sm flex items-center justify-between"
+                class="deadline-date mt-2 text-sm flex items-center justify-between upper-dashed-border"
               >
                 <div class="deadline-left">
                   <span class="deadline opacity-70 text-black text-sm"
@@ -196,7 +195,7 @@
                 DevTools, check for overlapping...
               </p>
               <div
-                class="deadline-date mt-2 text-sm flex items-center justify-between"
+                class="deadline-date mt-[20px] text-sm flex items-center justify-between upper-dashed-border"
               >
                 <div class="deadline-left">
                   <span class="deadline opacity-70 text-black text-sm"
@@ -226,17 +225,17 @@
               >
                 Meta
               </h1>
-              <h3 class="mt-[10px] mb-[10px] text-black text-2xl font-medium">
+              <h3 class="mt-[20px] mb-[10px] text-black text-2xl font-medium">
                 Add new emoji🤲
               </h3>
               <p
-                class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px]"
+                class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px] mt-[15px]"
               >
                 Debug using Chrome <br />
                 DevTools, check for overlapping...
               </p>
               <div
-                class="deadline-date mt-2 text-sm flex items-center justify-between"
+                class="deadline-date text-sm flex items-center justify-between upper-dashed-border mt-[20px]"
               >
                 <div class="deadline-left">
                   <span class="deadline opacity-70 text-black text-sm"
@@ -266,17 +265,17 @@
               >
                 Google LLC
               </h1>
-              <h3 class="mt-[10px] mb-[10px] text-black text-2xl font-medium">
+              <h3 class="mt-[20px] mb-[10px] text-black text-2xl font-medium">
                 Integrate OpenAI API
               </h3>
               <p
-                class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px]"
+                class="text-sm text-gray-600 p-[12px] bg-white rounded-lg mb-[12px] mt-[15px]"
               >
                 Debug using Chrome <br />
                 DevTools, check for overlapping...
               </p>
               <div
-                class="deadline-date mt-2 text-sm flex items-center justify-between"
+                class="deadline-date text-sm flex items-center justify-between upper-dashed-border mt-[20px]"
               >
                 <div class="deadline-left">
                   <span class="deadline opacity-70 text-black text-sm"
@@ -316,7 +315,7 @@
                 DevTools, check for overlapping...
               </p>
               <div
-                class="deadline-date mt-2 text-sm flex items-center justify-between"
+                class="deadline-date text-sm flex items-center justify-between upper-dashed-border mt-[20px]"
               >
                 <div class="deadline-left">
                   <span class="deadline opacity-70 text-black text-sm"

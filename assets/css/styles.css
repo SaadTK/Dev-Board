@@ -9,12 +9,8 @@
 .linear-blue-gradient {
   background: linear-gradient(to right, #3752fd 0%, #6c7ffa 53%, #9ba8f8 100%);
 }
-/* body {'
-  background-color: red;
-}' */
 
-/* .EF85-bg-whitesmoke {
-  width: 85%;
-  margin: 0 auto;
-  background-color: whitesmoke;
-} */
+.upper-dashed-border {
+  padding-top: 10px;
+  border-top: 2px dashed gray;
+}
