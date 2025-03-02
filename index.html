@@ -344,13 +344,33 @@
         <!-- Right Section (Activity Log)  -->
         <div class="col-span-3">
           <div class="bg-white p-4 rounded-xl shadow-md">
-            <h2 class="text-lg font-semibold">Activity Log</h2>
-            <button class="btn btn-sm btn-primary mt-2">Clear History</button>
-            <div class="mt-4 text-sm text-gray-600">
-              You have completed 'Add Dark Mode' at 12:48 PM
+            <div
+              class="activity-log flex text-center items-center ml-[70px] pb-[10px]"
+            >
+              <img
+                src="assets/img/activity.png"
+                alt="Activity logo"
+                class="w-[24px]"
+              />
+              <h2 class="text-lg font-semibold">Activity Log</h2>
             </div>
-            <div class="mt-2 text-sm text-gray-600">
-              You have completed 'Optimize Home Page' at 12:48 PM
+
+            <button
+              class="btn btn-sm btn-primary mt-2 text-center items-center ml-[70px] mb-[15px]"
+            >
+              Clear History
+            </button>
+            <div class="activities upper-dashed-border">
+              <div
+                class="mt-4 text-sm text-gray-600 bg-slate-300 p-[10px] rounded-lg"
+              >
+                You have completed 'Add Dark Mode' at 12:48 PM
+              </div>
+              <div
+                class="mt-2 text-sm text-gray-600 bg-slate-300 p-[10px] rounded-lg"
+              >
+                You have completed 'Optimize Home Page' at 12:48 PM
+              </div>
             </div>
           </div>
         </div>
