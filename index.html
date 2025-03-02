@@ -37,6 +37,7 @@
 
           <!-- Theme Button -->
           <img
+            id="theme-btn"
             src="assets/img/theme-btn.png"
             alt="Theme Change"
             class="w-[60px] p-3 bg-slate-200 rounded-full cursor-pointer"
@@ -61,7 +62,9 @@
               />
               <div class="task-num">
                 <p class="text-xl font-semibold">Task Assigned</p>
-                <p class="text-4xl font-bold text-blue-600">05</p>
+                <p class="text-4xl font-bold text-blue-600" id="task-number">
+                  06
+                </p>
               </div>
             </div>
             <!-- Discover Something New Section -->
@@ -87,8 +90,13 @@
                 class="w-[40px] ml-[20px]"
               />
               <div class="date-day">
-                <h2 class="text-lg -ml-[25px] text-black">Wed ,</h2>
-                <h3 class="text-2xl font-bold text-black ml-[60px]">
+                <h2 id="today-day" class="text-lg -ml-[25px] text-black">
+                  Wed ,
+                </h2>
+                <h3
+                  id="today-date"
+                  class="text-2xl font-bold text-black ml-[60px]"
+                >
                   Jul 28 2025
                 </h3>
               </div>
@@ -356,25 +364,28 @@
             </div>
 
             <button
+            id="clear-history-btn"
               class="btn btn-sm btn-primary mt-2 text-center items-center ml-[70px] mb-[15px]"
             >
               Clear History
             </button>
-            <div class="activities upper-dashed-border">
+            <div class="activities upper-dashed-border" id="activity-history"> 
               <div
                 class="mt-4 text-sm text-gray-600 bg-slate-300 p-[10px] rounded-lg"
               >
-                You have completed 'Add Dark Mode' at 12:48 PM
-              </div>
-              <div
-                class="mt-2 text-sm text-gray-600 bg-slate-300 p-[10px] rounded-lg"
-              >
-                You have completed 'Optimize Home Page' at 12:48 PM
+                This is a test case. Please click "Clear History" button above
+                and try the "Complete" button to check for "Activity History
+                Log"
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="assets/js/taskDone.js"></script>
+    <script src="assets/js/clearHistory.js"></script>
+    <script src="assets/js/congratsAlert.js"></script>
+    <script src="assets/js/toggleThemes.js"></script>
+    <script src="assets/js/setTodayDate.js"></script>
   </body>
 </html>
