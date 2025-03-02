@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body class="bg-blue-50 p-6 poppins-regular">
+    <div class="max-w-7xl mx-auto">
+      <!-- header section -->
+      <header class="flex justify-between items-center bg-white p-4 rounded-xl">
+        <div class="logo-title flex text-center items-center gap-[10px]">
+          <img class="logo" src="assets/img/logo.png" alt="logo image" />
+          <p class="title text-4xl text-black">
+            Dev<span class="second-title"><strong>Board</strong></span>
+          </p>
+        </div>
+
+        <div class="flex items-center gap-6" id="back-btn">
+          <button
+            type="button"
+            class="w-[150px] h-[50px] bg-blue-500 text-white rounded-lg"
+          >
+            Back to Desk
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <main class="main-section" id="main-id max-w-7xl mx-auto">
+      <h1
+        class="blogs-title items-center text-center text-black text-3xl font-bold mt-[15px]"
+      >
+        Blogs
+      </h1>
+      <section class="qAnda max-w-7xl mx-auto mt-[20px]">
+        <!-- q1 -->
+        <div class="q1-a1-container mb-[20px] bg-gray-300 rounded-lg">
+          <p class="q1 p-[10px] text-black font-bold border-bottom">
+            Question-1: What are the different ways to select and element in the
+            DOM?
+          </p>
+
+          <p class="a1 p-[10px] text-black opacity-60">
+            We use, 1. getElementById, 2. getElementsByClassName, 3.
+            getElementByTagName, 4. querySelector, 5. querySelectorAll.
+          </p>
+        </div>
+
+        <!-- q2 -->
+        <div class="q1-a1-container mb-[20px] bg-gray-300 rounded-lg">
+          <p class="q1 p-[10px] text-black font-bold border-bottom">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContext?
+          </p>
+
+          <p class="a1 p-[10px] text-black opacity-60">
+            innerHTML returns HTML tags, while innerText and textContent only
+            works with text.
+          </p>
+        </div>
+        <!-- q3 -->
+        <div class="q1-a1-container mb-[20px] bg-gray-300 rounded-lg">
+          <p class="q1 p-[10px] text-black font-bold border-bottom">
+            Question-3: What is event delegation is DOM?
+          </p>
+
+          <p class="a1 p-[10px] text-black opacity-60">
+            It's a technique in JavaScript where we attach a single event
+            listener to a parent element instead of attaching it to individual
+            child elements.
+          </p>
+        </div>
+        <!-- q4 -->
+        <div class="q1-a1-container mb-[20px] bg-gray-300 rounded-lg">
+          <p class="q1 p-[10px] text-black font-bold border-bottom">
+            Question-4: What is event bubbling is DOM?
+          </p>
+
+          <p class="a1 p-[10px] text-black opacity-60">
+            As an event occurs on an element (click or key-pressing), it first
+            triggers the event handlers on the element itself, and then bubbles
+            up to its parent elements, continuing up to the root of the
+            document.
+          </p>
+        </div>
+        <!-- q5 -->
+        <div class="q1-a1-container mb-[20px] bg-gray-300 rounded-lg">
+          <p class="q1 p-[10px] text-black font-bold border-bottom">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </p>
+
+          <p class="a1 p-[10px] text-black opacity-60">
+            We use document.createElement() to create an element. Use
+            appendChild(), or append() to add an element. We use removeChild()
+            or remove() to remove an element.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="assets/js/goBack.js"></script>
+</html>
